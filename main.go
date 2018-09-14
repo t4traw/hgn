@@ -20,7 +20,7 @@ func main() {
 		// ディレクトリ生成
 		t := time.Now()
 		p := t.Format("2006/01")
-		dir := "blog/" + p
+		dir := "content/blog/" + p
 		if err := os.MkdirAll(dir, 0777); err != nil {
 			fmt.Println(err)
 		}
